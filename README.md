@@ -41,6 +41,8 @@ An app that will allow clubs to find umpires for matches, and that will allow um
 
 ### Wire Frames
     ![Conceptial ERD] (imgs/conceptual ERD.png)
+    ![logical ERD] (imgs/logical ERD.png)
+    ![Physical ERD] (imgs/physical ERD.png)
 ## Features
     - Current Features
         - Create a new user (club representative)
