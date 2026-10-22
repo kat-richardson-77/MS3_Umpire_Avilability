@@ -5,13 +5,15 @@ The purpose of this app is allow teams to find available umpires in the area to 
 The Umpires will be able to browse a list of matches that require an umpire and see the date, time and physical location of the match.
 
 ## Project Overview
-This app will allow both  Netball Club representatives and Umpires to create accounts.
-A the Netball Representative will be able to create a request for an umpire for a match, the match will have a County, City, Date, Time and exact location. 
-An Umpire will be able to view netball matches within an area or location and be able to confirm that they can attend the match
+This app will allow both Netball Club representatives and Umpires to create accounts, updates password and delete accounts.
+A Netball Representative will be able to create a request for an umpire for a match, the match will have a County, City, Date, Time and exact location within the rewuest. 
+An Umpire will be able to view netball matches within an area or location and be able to confirm that they can attend the match.
+There are assumtions made that the matches will take an hours slot and that there is a set amount that the umpire will be paid for travelling expenses
 
 ## User Experience (UX)
+
 ### Project Goals
-An app that will allow clubs to find umpires for matches, and that will allow umpires to view any upcoming matches that still require an umpire
+This app that will allow clubs to create a request for an umpire for a match or matches.  There will also be an option to cancel the match if there are any issues.  This will allow umpires to view any upcoming matches that still require an umpire within the area they are currently in.
 
 ### User Stories
     1. User Story 
@@ -56,7 +58,17 @@ An app that will allow clubs to find umpires for matches, and that will allow um
 ## Technologies Used
 ## Testing
 ## Local Developement Set Up
+    1. MS3 VS set up
+        * Logged onto Visual Studio
+            * created a new folder MS3_Umpire_Avilability
+            * opened the folder in VS
+        * logged into GitHub and created a new repository MS3_Umpire_Availability
+            * copied the code to set up on vs
+        * Navigated back to VS and pasted this into terminal
+            * confirmed the readme file is now available  
 ## Live Development
 ### screenshots
 ## Credits
 ERD diagrams were created using Lucid (https://lucid.app/)
+postgreSQL
+
