@@ -131,6 +131,11 @@ This app that will allow clubs to create a request for an umpire for a match or 
 
 
 ## Testing
+Test username: test
+Test Email: test@gmail.com
+Test password: Testing123
+secret key: 0539f865b4d8f18970fa0b0a4a6a9d190772535671be7cb1e00a670314372b74
+
 ## Local Developement Set Up
     1. MS3 VS set up
         * Logged onto Visual Studio

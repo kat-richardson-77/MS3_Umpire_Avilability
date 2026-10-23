@@ -1,145 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <title>Umpire Availability Login Page</title>
-    <style>
-        body {
-            font-family: poppins, sans-serif;
-            background-color: #04376b;
-            background-position: center;
-            font-color: rgb(38, 1, 8);
-        }
-
-        a {
-            color: #fff;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 2rem;
-            color: azure;
-        }
-
-        .wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2.5rem;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            gap: 2rem;
-        }
-
-        .input-wrapper {
-            display: flex;
-            margin-bottom: 1rem;
-            border: 1px solid #f9f9f660
-        }
-
-        .input-label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #fff;
-        }
-
-        .input-wrapper i {
-            padding: 1rem 0.5rem;
-            font-size: 20px;
-            color: #fff;
-        }
-
-        .form-control {
-            border: none;
-            font-size: 1rem;
-            padding: 1rem 0.5rem;
-            color: #fff;
-            border-left: 1px solid #f9f9f660;
-            width: 100%;
-            background-color: #f9f6f660;
-            font-family: poppins, sans-serif;
-        }
-
-        .form-control:focus-visible {
-            outline: none;
-        }
-
-        .form-element {
-            display: flex;
-            justify-content: space-between;
-            color: #fff;
-        }
-
-        .btn-submit {
-            font-size: 1rem;
-            width: 100%;
-            margin-top: 1rem;
-            color: #fff;
-            padding: 1rem 1.025rem;
-            font-family: poppins, sans-serif;
-            background-color: #f9f6f660;
-            border: none;
-            cursor: pointer;
-        }
-
-        .signup-link {
-            color: #fff;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Umpire Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
-<body>
-    <h1>Umpire Availability Login</h1>
-    <section class="wrapper">
-        <div class="content">
-            <div class="left-content">
-                <h1>
-                    Sign in
-                </h1>
-            </div>
-            <div class="right-content">
-                <form action="#">
-                    <label for="" class="input-label">
-                        email address*
-                    </label>
-                    <div class="input-wrapper"></div>
-                    <i class="">
-                        <input type="email" class="form-control" name="email" placeholder="Eemail">
-            </div>
-            <label for="" class="input-label">
-                password*
-            </label>
-            <div class="input-wrapper"></div>
-            <i class="">
-                <input type="password" class="form-control" name="password" placeholder="Password">
-        </div>
-        <div class="form-element">
-            <div class="checkbox">
-                <input type="checkbox" id="rememberme">
-                <label for="rememberme">Remember me</label>
-            </div>
-            <a href="#" class="forgot-password">Forgot password?</a>
-        </div>
-        <button class="btn btn-primary" type="submit">Sign in</button>
+<body class="bg-light">
+    <main class="container py-5">
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+            <h1>Umpire Availability Dashboard</h1>
+            <p>Welcome, {{ email }}!</p>
+            <p>You are successfully signed in.</p>
 
-        <div class="signup">
-            <p>Don't have an account? <a href="#">Register your accountp</a></p>
+            <form method="post" action="{{ url_for('logout') }}">
+                <button type="submit" class="btn btn-danger">
+                    Sign out
+                </button>
+            </form>
         </div>
-        </div>
-        </form>
-    </section>
+    </main>
 </body>
+</html>?
+                    <a href="register.html">Register here</a>
+                </p>
+
+            </form>
+
+        </section>
+
+        <footer class="footer-text">
+            &copy; 2026 Umpire Availability. All rights reserved.
+        </footer>
+
+    </main>
+
+</body>
+</html>
