@@ -1,7 +1,9 @@
 from django.shortcuts import render 
+from django.contrib.auth import authenticate, login
+from django.contrib import messages
 from .models import User
 from django.http import HttpResponse
-from forms import UserRegisterForm
+from .forms import UserRegisterForm
 
 def indexpageview(request):
     return render(request, 'index.html')
@@ -16,6 +18,7 @@ def register_user(request):
             form.save()
             username = form.cleaned_data.get('username')
             message = f'User {username} registered successfully!'
+            messages.success(request, message)
             return HttpResponse('User registered successfully!')
     else:
         form = UserRegisterForm()
