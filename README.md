@@ -71,7 +71,12 @@ This app that will allow clubs to create a request for an umpire for a match or 
         * logged into GitHub and created a new repository MS3_Umpire_Availability
             * copied the code to set up on vs
         * Navigated back to VS and pasted this into terminal
-            * confirmed the readme file is now available  
+            * confirmed the readme file is now available in GitHub
+        * Visual Studio
+            * installed Python
+            * Installed Django
+            * Installed venv
+            * Installed PostgreSQL
 ## Live Development
 ### screenshots
 ## Credits
