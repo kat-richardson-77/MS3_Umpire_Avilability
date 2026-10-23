@@ -18,8 +18,12 @@ def register_user(request):
             form.save()
             username = form.cleaned_data.get('username')
             message = f'User {username} registered successfully!'
-            messages.success(request, message)
-            return HttpResponse('User registered successfully!')
+            return redirect('login')  # Redirect to the login page after successful registration
+
     else:
         form = UserRegisterForm()
-    return render(request, 'adduser.html', {'form': form})
+    return render(request, 'requestumpire.html')
+
+@login_required
+def home(request):
+    return render(request, 'requestumpire.html')
