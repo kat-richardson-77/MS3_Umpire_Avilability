@@ -56,6 +56,12 @@ This app that will allow clubs to create a request for an umpire for a match or 
         - Send popup message to all umpires in an area when a new match is available
 
 ## Technologies Used
+    - Visual Studio
+    - GitHub
+    - PostgreSQL
+    - Python
+
+
 ## Testing
 ## Local Developement Set Up
     1. MS3 VS set up
