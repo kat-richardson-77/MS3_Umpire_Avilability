@@ -45,6 +45,74 @@ This app that will allow clubs to create a request for an umpire for a match or 
     ![Conceptial ERD] (imgs/conceptual ERD.png)
     ![logical ERD] (imgs/logical ERD.png)
     ![Physical ERD] (imgs/physical ERD.png)
+
+## Database process
+### Conceptual Design
+    - 3 main databases 
+        * all_users - this will hold the majority of the data, first and lastname, email address, County, City, username, password, enid which is the England Netball ID - current governing body for Netball in the UK - both players and umpires have to pay a yearly subscription to this.  The ENID will be the Primary Key and will be unique as each registered user has a unique enid.
+        * umpires - this will hold details for the umpires, enid is the primary key and there will be a field for qualification of he umpire, as some matches require a specific qualification
+        * matches - this will hold the details of the matches, they will have a unique auto id as the primary key.  The foreign key will be based on the user_enid and will include locations, dates and times
+
+### Logical Design
+        *all_users:
+            * PK enid 
+            * firstname 
+            * surname 
+            * email 
+            * county 
+            * city 
+            * club 
+            * umpire 
+            * username 
+            * password 
+        * umpire :
+            * PK enid 
+            * firstname 
+            * surname 
+            * FK username 
+            * county 
+            * city 
+            * qualification 
+        * match :
+            * PK id 
+            * FK user_enid 
+            * FK umpire_enid 
+            * county 
+            * city 
+            * location 
+            * date 
+            * time 
+
+### Physical Concept
+        *all_users database fields will be:
+            * PK enid numerical
+            * firstname text
+            * surname text
+            * email text
+            * county text
+            * city text
+            * club text
+            * umpire boolean
+            * username text
+            * password text
+        * umpire database fields will be:
+            * PK enid numerical
+            * firstname text
+            * surname text
+            * FK username text
+            * county text
+            * city text
+            * qualification text
+        * match database fields will be:
+            * PK id autoincrement
+            * FK user_enid text
+            * FK umpire_enid text
+            * county text
+            * city text
+            * location text
+            * date date
+            * time time
+
 ## Features
     - Current Features
         - Create a new user (club representative)
