@@ -74,17 +74,11 @@ WSGI_APPLICATION = 'MS3_Umpire_Availability.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'umpire_availability',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'catykins1977!',
         'HOST': 'localhost',

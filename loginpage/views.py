@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from .forms import UserRegisterForm
 
 def indexpageview(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 def adduserpageview(request):
     return render(request, 'adduser.html')
